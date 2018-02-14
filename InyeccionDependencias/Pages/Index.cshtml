@@ -4,5 +4,8 @@
     ViewData["Title"] = "Home page";
 }
 
+@inject IEmailService emailServiceView
 
 <h3>@Model.Mensaje</h3>
+
+<h3>Desde la vista: @emailServiceView.EnviarCorreo()</h3>
